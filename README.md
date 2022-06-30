@@ -10,7 +10,7 @@
 - Html
 - Css
 
-## Live Demo (if available)
+## Live Demo
 
 Coming soon...
 
