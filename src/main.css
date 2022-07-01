@@ -7,13 +7,14 @@
   box-sizing: border-box;
 }
 
-header > nav {
+header {
   display: flex;
   padding: 24px;
   justify-content: space-between;
 }
 
 header > nav > .logo {
+  text-decoration: none;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
