@@ -195,6 +195,10 @@ header > nav > .hamburger_menu {
   gap: 8px;
 }
 
+button {
+  cursor: pointer;
+}
+
 .about > button {
   margin-top: 4px;
   padding: 12px;
