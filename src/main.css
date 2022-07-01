@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap'); /* weight: 700 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); /* weight: 400 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap'); /* 600 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); /* 500 */
 
 * {
   padding: 0;
@@ -7,13 +9,18 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #e5e5e5;
+}
+
 header {
   display: flex;
   padding: 24px;
   justify-content: space-between;
+  background-color: #fff;
 }
 
-header > nav > .logo {
+header > .logo {
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -31,6 +38,8 @@ header > nav > .hamburger_menu {
 }
 
 .headline {
+  background-color: #fff;
+  border-bottom-left-radius: 50px;
   height: 604px;
   padding: 114px 24px 0 24px;
   background-image: url('./assets/headline_bg.svg');
@@ -78,4 +87,230 @@ header > nav > .hamburger_menu {
   color: #505f79;
   font-size: 20px;
   cursor: pointer;
+}
+
+.works {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 88px;
+  padding: 114px 24px 0 24px;
+}
+
+.works > .card {
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.works > .card > .information {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 20px;
+}
+
+.about > h2 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.works > .card > .information > h2 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.about > .skillList > ul > li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  background: #f7f7f9;
+  border-radius: 8px;
+  padding: 9px 12px;
+}
+
+.works > .card > .information > ul.tags > li {
+  padding: 4px 12px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  background: #ebebff;
+  border-radius: 8px;
+  color: #6070ff;
+}
+
+.works > .card > .information > ul.subject {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.works > .card > .information > ul.subject > li:first-child {
+  color: #344563;
+}
+
+.about > p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.works > .card > .information > p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.works > .card > .information > ul.tags {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.about > button {
+  margin-top: 4px;
+  padding: 12px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  width: 170px;
+  background: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #396df2;
+}
+
+.works > .card > .information > button {
+  margin-top: 4px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  padding: 12px;
+  width: 132px;
+  background-color: #fff;
+  margin-bottom: 12px;
+}
+
+.about {
+  background-color: #fff;
+  margin-top: 114px;
+  border-top-right-radius: 50px;
+  padding: 114px 24px 0 24px;
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 12px;
+}
+
+.about > .connect {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
+.about > .social-medias {
+  margin-top: 12px;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.about > .social-medias > li > a > i {
+  color: #505f79;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.about > .skillList {
+  margin-top: 12px;
+}
+
+.about > .skillList > ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 12px;
+  padding: 24px 12px;
+  align-content: center;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.about > .skillList > ul > .skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+  background-color: #fff;
+}
+
+.about > .skillList > ul > .skill > img {
+  transform: rotate(-90deg);
+}
+
+.about > .skillList > ul.languages {
+  border-bottom: none;
+}
+
+.about > .skillList > ul.languages > .skill {
+  padding-bottom: 24px;
+}
+
+.about > .skillList > ul.languages > .skill > img {
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+
+.circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #c1c7d0;
 }
